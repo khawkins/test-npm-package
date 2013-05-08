@@ -1,0 +1,11 @@
+{
+	"name": "myTestPackage",
+	"version": "1.0.0",
+	"description": "My test package",
+	"bin" : { "forceios" : "./myTestPackage.js" },
+	"repository": {
+		"type" : "git",
+		"url" : "https://github.com/khawkins/test-npm-package.git"
+	},
+	"author": { "name": "Kevin Hawkins", "email": "khawkins@salesforce.com" }
+}
