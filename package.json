@@ -1,8 +1,8 @@
 {
-	"name": "myTestPackage",
+	"name": "khTempTestPackage",
 	"version": "1.0.0",
-	"description": "My test package",
-	"bin" : { "myTestPackage" : "./myTestPackage.js" },
+	"description": "Kevin's temporary test package",
+	"bin" : { "khTempTestPackage" : "./myTestPackage.js" },
 	"repository": {
 		"type" : "git",
 		"url" : "https://github.com/khawkins/test-npm-package.git"
