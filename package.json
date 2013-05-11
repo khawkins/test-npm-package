@@ -2,6 +2,7 @@
     "name": "khTempTestPackage",
     "version": "1.0.0",
     "description": "Kevin's temporary test package",
+    "bin": { "consumePackage": "./consumingPackage.js" },
     "main" : "./myTestPackage.js",
     "repository": {
         "type" : "git",
