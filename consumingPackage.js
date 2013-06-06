@@ -1,9 +1,15 @@
 #!/usr/bin/env node
 
 var path = require('path');
+var jsObjectsTests = require('./jsObjectsTests');
+var readlineTests = require('./readlineTests');
+var typeTests = require('./typeTests');
 
 var funcMap = {
-	'myTestPackageExec': myTestPackageExec
+	'myTestPackageExec': myTestPackageExec,
+	'testJsObjects': testJsObjects,
+	'testReadline': testReadline,
+	'logVariousTypes': logVariousTypes
 };
 
 // --- Begin Setup ---
@@ -32,4 +38,17 @@ function myTestPackageExec() {
 	var testPackage = require('./myTestPackage');
 	testPackage.sayHelloWithText("Where'd the cheese go?  I don't know!");
 	testPackage.showCurrentFolderContents();
+}
+
+function testJsObjects() {
+	jsObjectsTests.testTwoInstancesNamedPropertiesObj();
+	jsObjectsTests.testTwoInstancesUnnamedPropertiesObj();
+}
+
+function testReadline() {
+	readlineTests.readlineAlternateBuffers();
+}
+
+function logVariousTypes() {
+	typeTests.logVariousTypes();
 }
